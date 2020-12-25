@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currency Converter</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="src/styles.css" />
+    </head>
+
+    <body>
+        <div id="app">
+            <form id="form">
+                <label for="base-currency">Choose a base currency:</label>
+                <select id="base-currency" name="base-currency">
+                    <option value="USD">US</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">British Pound</option>
+                </select>
+                <input type="number" step=".01" id="base-currency-amount" />
+                <label for="quote-currency">Choose a quote currency:</label>
+                <select id="quote-currency" name="quote-currency">
+                    <option value="USD">US</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">British Pound</option>
+                </select>
+                <input type="submit" />
+            </form>
+            <p id="log"></p>
+            <p id="last-update"></p>
+        </div>
+        <script src="src/index.js"></script>
+    </body>
+</html>
